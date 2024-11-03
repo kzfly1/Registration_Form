@@ -10,6 +10,7 @@ body {
   color: #333;
 }
 
+/* Form styling */
 form {
   max-width: 70%;
   margin: 10px auto;
@@ -70,6 +71,7 @@ select {
   box-sizing: border-box;
 }
 
+/* Input Styling */
 .textInput,
 textarea,
 select {
@@ -89,6 +91,7 @@ select {
   border-radius: 5px;
 }
 
+/* Submit Button Styling */
 button {
   padding: 10px;
   color: #fff;
@@ -100,8 +103,14 @@ button {
   width: 100%;
   margin-bottom: 10px;
   margin-top: 12px;
+  cursor: pointer;
 }
 
+button:hover {
+  background-color: #3da85f;
+}
+
+/* Design for smaller screen */
 @media screen and (max-width: 800px) {
   form {
     max-width: 100%;

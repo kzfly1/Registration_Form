@@ -9,6 +9,8 @@
   <body>
     <form action="">
       <h1>Sign Up</h1>
+
+      <!-- Basic Info Section -->
       <fieldset>
         <legend>Your Basic Info</legend>
         <label for="firstname">First Name</label>
@@ -44,6 +46,7 @@
           class="textInput"
           id="password"
           name="user_password"
+          minlength="15"
           required
         />
 
@@ -53,10 +56,13 @@
           class="textInput"
           id="password_confirm"
           name="user_password_confirmation"
+          minlength="15"
           required
         />
       </fieldset>
       <br />
+
+      <!-- Other Details Section -->
       <fieldset>
         <legend>Other Details</legend>
         <label for="birthdate">Date Of Birth</label>
@@ -78,6 +84,8 @@
         <label for="other">Other</label>
       </fieldset>
       <br />
+
+      <!-- About Me -->
       <fieldset>
         <legend>About Me</legend>
         <label for="about_me">Tell us about yourself</label>
@@ -91,6 +99,8 @@
         ></textarea>
       </fieldset>
       <br />
+
+      <!-- Profession Section -->
       <fieldset>
         <legend>Choose Your Profession</legend>
         <label for="profession">Profession</label>
@@ -102,6 +112,8 @@
         </select>
       </fieldset>
       <br />
+
+      <!-- Terms and Submit Section -->
       <fieldset>
         <div>
           <input type="checkbox" id="terms" value="agreed" required />
