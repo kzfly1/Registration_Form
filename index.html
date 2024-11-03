@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Sign Up</h1>
+      <fieldset>
+        <legend>Your Basic Info</legend>
+        <label for="firstname">First Name</label>
+        <input
+          class="textInput"
+          type="text"
+          id="firstname"
+          name="user_first_name"
+          required
+        />
+
+        <label for="lastname">Last Name</label>
+        <input
+          class="textInput"
+          type="text"
+          id="lastname"
+          name="user_last_name"
+          required
+        />
+
+        <label for="mail">Email</label>
+        <input
+          class="textInput"
+          type="text"
+          id="mail"
+          name="user_email"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="textInput"
+          id="password"
+          name="user_password"
+          required
+        />
+
+        <label for="password_confirm">Confirm Password</label>
+        <input
+          type="password"
+          class="textInput"
+          id="password_confirm"
+          name="user_password_confirmation"
+          required
+        />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Other Details</legend>
+        <label for="birthdate">Date Of Birth</label>
+        <input
+          type="date"
+          class="textInput"
+          id="birthdate"
+          name="user_birthday"
+          required
+        />
+        <br />
+        <label>Gender</label>
+        <br />
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required />
+        <label for="other">Other</label>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>About Me</legend>
+        <label for="about_me">Tell us about yourself</label>
+        <br />
+        <textarea
+          name="user_about_me"
+          id="about_me"
+          rows="5"
+          cols="33"
+          placeholder="Please enter a brief description about yourself"
+        ></textarea>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Choose Your Profession</legend>
+        <label for="profession">Profession</label>
+        <br />
+        <select name="profession" id="profession">
+          <option value="Web Development">Web Development</option>
+          <option value="Data Analytics">Data Analytics</option>
+          <option value="UI/UX design">UI/UX Design</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <div>
+          <input type="checkbox" id="terms" value="agreed" required />
+          <label for="terms">I agree to the terms and conditions</label>
+        </div>
+        <button type="submit">Sign Up</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
