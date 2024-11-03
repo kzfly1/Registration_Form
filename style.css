@@ -15,11 +15,14 @@ body {
 }
 /* Form styling */
 form {
-  max-width: 50%;
+  max-width: 60%;
+  width: 95%;
   margin: 10px auto;
-  padding: 10px 10px;
+  padding: 20px;
   background: #e1e1e1;
   border-radius: 8px;
+  min-height: 100vh;
+  box-sizing: border-box;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -29,11 +32,13 @@ h1 {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 fieldset {
   border: none;
+  padding: 10px 0;
 }
 
 legend {
@@ -80,7 +85,8 @@ legend::after {
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
