@@ -10,13 +10,17 @@ body {
   color: #333;
 }
 
+:root {
+  --legend-color: #007a5a;
+}
 /* Form styling */
 form {
   max-width: 70%;
   margin: 10px auto;
   padding: 10px 10px;
-  background: #b9bbc0;
+  background: #fbfbfb;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -43,9 +47,9 @@ legend {
 
 legend::before {
   content: "";
-  background-color: #007a5a;
+  background-color: var(--legend-color);
   width: 16px;
-  height: 8px;
+  height: 2px;
   vertical-align: middle;
   border-radius: 8px;
   display: inline-block;
@@ -55,9 +59,9 @@ legend::before {
 
 legend::after {
   content: "";
-  background-color: #007a5a;
+  background-color: var(--legend-color);
   width: 16px;
-  height: 8px;
+  height: 2px;
   vertical-align: middle;
   border-radius: 8px;
   display: inline-block;
@@ -65,29 +69,64 @@ legend::after {
   font-size: 14px;
 }
 
+/* DOB & Gender Section */
+.dob-gender-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.gender-options {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.gender-options input {
+  margin-right: 5px;
+}
+/* Input Styling */
 input,
 textarea,
 select {
   box-sizing: border-box;
 }
 
-/* Input Styling */
 .textInput,
 textarea,
 select {
-  background: #fff;
-  border: none;
+  background: hsl(0, 20%, 78%);
+  border: 1px solid #ccc;
   font-size: 16px;
   height: auto;
   margin: 0;
   outline: 0;
   padding: 5px 5px;
   width: 100%;
-  background-color: #e8eeef;
+  background-color: #fcfcfc;
   color: #253642;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-  margin-bottom: 10px;
-  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   border-radius: 5px;
 }
 
@@ -115,5 +154,6 @@ button:hover {
   form {
     max-width: 100%;
     padding: 10px 5px;
+    height: 100vh;
   }
 }
