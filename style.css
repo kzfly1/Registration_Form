@@ -154,6 +154,7 @@ button:hover {
   form {
     max-width: 100%;
     padding: 10px 5px;
+    background: #e1e1e1;
   }
 
   h1 {
