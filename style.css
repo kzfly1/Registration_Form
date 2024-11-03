@@ -154,6 +154,19 @@ button:hover {
   form {
     max-width: 100%;
     padding: 10px 5px;
-    height: 100vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .form-group {
+    flex-direction:column;
+    gap: 10px;
+  }
+
+  .gather-options {
+    flex-direction: column;
+    gap: 5px;
   }
 }
