@@ -37,6 +37,7 @@
           type="mail"
           id="mail"
           name="user_email"
+          placeholder="Your email address"
           required
         />
 
@@ -123,10 +124,13 @@
         <legend>Choose Your Profession</legend>
         <label for="profession">Profession</label>
         <br />
-        <select name="profession" id="profession">
+        <select name="profession" id="profession" required>
+          <option value="" disabled selected></option>
           <option value="Web Development">Web Development</option>
           <option value="Data Analytics">Data Analytics</option>
           <option value="UI/UX design">UI/UX Design</option>
+          <option value="Academic">Academic</option>
+          <option value="Muggle">Muggle</option>
         </select>
       </fieldset>
       <br />
